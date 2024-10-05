@@ -1,0 +1,40 @@
+#include <iostream>
+using namespace std;
+
+// Class rectangle definition
+class Rectangle {
+public:
+    // Member variable
+    double length;
+    double width;
+
+    // Function to calculate the area of the rectangle
+    double getArea(){return length * width;}
+
+    // Function to calculate the perimeter of the rectangle
+    double getPerimeter() {return 2 * (length + width);}
+
+    // Function to display the area and perimeter of the rectangle
+    void display() {cout << "Area: " << getArea() << \n;
+        cout << "Perimeter: " << getPerimeter() << \n;}
+};
+int main() {
+    // Creating two objects of class Rectangle
+    Rectangle rect1, rect2;
+
+    // Assigning values to rect1
+    rect1.length = 5.0;
+    rect1.width = 3.0;
+
+    //Assigning values to rect2
+    rect2.length = 10.0;
+    rect2.width = 7.0;
+
+    // Displaying the area and perimeter for rect1 and rect2
+    cout << "Rectangle 1:" << \n;
+    rect1.display results();
+
+    cout << "Rectangle 2:" << \n;
+    rect2.display results();
+
+    return 0;
